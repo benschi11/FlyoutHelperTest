@@ -27,7 +27,7 @@
                                     <StackPanel>
                                         <TextBlock Text="{Binding Name}"></TextBlock>
                                         <MenuFlyoutSeparator />
-                                        <Button Content="Bearbeiten"
+                                        <Button Content="Edit"
                                                 Command="{Binding EditCommand}"
                                                 x:Name="EditButton">
                                             <FlyoutBase.AttachedFlyout>
