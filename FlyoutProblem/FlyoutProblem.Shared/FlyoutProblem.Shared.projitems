@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>de90352d-2203-4bf7-af9a-f51361fe5da5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FlyoutProblem</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\DepthToMarginConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\TestModelEditedEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EnumerableExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Node.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FlyoutHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TestModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EditTestControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ManageTestViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TestViewModel.cs" />
+  </ItemGroup>
+</Project>
